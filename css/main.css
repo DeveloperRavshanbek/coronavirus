@@ -1,0 +1,413 @@
+@import "./bootstrap.min.css";
+@import "./fontawesome.min.css";
+
+/* Fonts */
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/bold/Gelion-Bold.eot");
+  src: url("../fonts/bold/Gelion-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/bold/Gelion-Bold.woff2") format("woff2"),
+    url("../fonts/bold/Gelion-Bold.woff") format("woff"),
+    url("../fonts/bold/Gelion-Bold.ttf") format("truetype"),
+    url("../fonts/bold/Gelion-Bold.svg#Gelion-Bold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/light/Gelion-Light.eot");
+  src: url("../fonts/light/Gelion-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/light/Gelion-Light.woff2") format("woff2"),
+    url("../fonts/light/Gelion-Light.woff") format("woff"),
+    url("../fonts/light/Gelion-Light.ttf") format("truetype"),
+    url("../fonts/light/Gelion-Light.svg#Gelion-Bold") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/medium/Gelion-Medium.eot");
+  src: url("../fonts/medium/Gelion-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/medium/Gelion-Medium.woff2") format("woff2"),
+    url("../fonts/medium/Gelion-Medium.woff") format("woff"),
+    url("../fonts/medium/Gelion-Medium.ttf") format("truetype"),
+    url("../fonts/medium/Gelion-Medium.svg#Gelion-Bold") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/regular/Gelion-Regular.eot");
+  src: url("../fonts/regular/Gelion-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/regular/Gelion-Regular.woff2") format("woff2"),
+    url("../fonts/regular/Gelion-Regular.woff") format("woff"),
+    url("../fonts/regular/Gelion-Regular.ttf") format("truetype"),
+    url("../fonts/regular/Gelion-Regular.svg#Gelion-Bold") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Gelion", sans-serif;
+  scroll-behavior: smooth;
+}
+.header-wrapper nav .close{
+  display: none;
+}
+/* Header */
+header {
+  background-color: #fff8f8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-wrapper nav ul {
+  display: flex;
+}
+.header-wrapper nav ul li {
+  list-style: none;
+  margin-top: 15px;
+  margin-right: 10px;
+  color: #fb4e49;
+}
+.header-wrapper nav ul li a {
+  text-decoration: none;
+  color: #035755;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: sans-serif;
+  border: 2px solid transparent;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: border 0.2s linear;
+}
+.header-wrapper nav ul li a:hover {
+  border: 2px solid #fb4e49;
+  color: #fb4e49;
+}
+header nav.active{
+  transform: translateX(0);
+}
+header nav.active ul{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 0;
+}
+/* Banner */
+.main-banner {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-image: url(../img/Group\ 18551.png);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-color: #fff8f8;
+  background-position: right 0;
+}
+
+.main-banner .covid-info button {
+  background-color: #fb4c47;
+  padding: 15px 35px;
+  color: #fff;
+}
+.main-section {
+  padding-top: 60px;
+}
+.main-banner .covid-info {
+  width: 500px;
+}
+.covid-info span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fa5652;
+  margin-bottom: 10px;
+  display: block;
+}
+.covid-info h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #035755;
+  margin-bottom: 30px;
+}
+.covid-info p {
+  font-size: 16px;
+  color: grey;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 40px;
+}
+
+.covid-info button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #fee6e5;
+  color: #fb4e49;
+  font-weight: 600;
+  font-size: 14px;
+}
+.covid-img img {
+  width: 100%;
+  height: 100%;
+  margin-top: -120px;
+}
+.virus {
+  position: absolute;
+  bottom: -400px;
+  right: 0;
+}
+.virus img {
+  width: 100px;
+  height: 200px;
+}
+.virus2 {
+  position: absolute;
+  bottom: -450px;
+  right: 80px;
+}
+.virus2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.contagion {
+  background-color: #fffcfc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contagion-title p {
+  width: 50%;
+  margin: 0 auto;
+}
+.contagion-card {
+  padding: 50px 40px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  transition: border-bottom 0.1s linear;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+.contagion-card:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fb4e49;
+  border-radius: 2px;
+}
+.contagion-card img {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.contagion-card span {
+  display: block;
+  font-size: 24px;
+  color: #035755;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contagion-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4e5253;
+}
+.con-virus {
+  position: absolute;
+  bottom: -160%;
+  left: 16px;
+}
+.con-virus img {
+  width: 100px;
+  height: 200px;
+}
+.symptom {
+  background-color: #fffcfc;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.symptom-banner img {
+  height: 100%;
+  width: 100%;
+}
+.about-corona {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.about-info {
+  padding: 10px;
+  margin-top: 80px;
+  position: relative;
+}
+.about-info .about-num {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fee6e6;
+  text-align: center;
+  color: #fb4c47;
+  font-size: 26px;
+  font-weight: 600;
+}
+.about-info .about-num2 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #fee6e6;
+  text-align: center;
+  color: #fb4c47;
+  font-size: 26px;
+  font-weight: 600;
+}
+.about-info span {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #035755;
+  margin-bottom: 20px;
+}
+.about-info p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #4e5253;
+}
+.about-pic {
+  margin: 0 auto;
+  text-align: center;
+}
+.about-pic img {
+  width: 360px;
+  height: 360px;
+}
+
+.about-virus {
+  position: absolute;
+  bottom: -400%;
+  left: 0;
+}
+.about-virus img {
+  width: 100px;
+  height: 200px;
+}
+
+.about-virus2 {
+  position: absolute;
+  bottom: -500%;
+  right: 20px;
+}
+.about-virus2 img {
+  width: 80px;
+  height: 80px;
+}
+.about-virus3 {
+  position: absolute;
+  bottom: -530%;
+  right: 0;
+}
+.about-virus3 img {
+  width: 100px;
+  height: 200px;
+}
+.contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fffbfa;
+}
+.contact-item {
+  text-align: center;
+}
+.contact-item h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0c6d44;
+}
+.contact-item span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0c6d44;
+}
+.contact-form {
+  padding-top: 40px;
+}
+.contact-form input {
+  background: #fff;
+  margin: 0 auto;
+  width: 150%;
+  padding: 25px;
+  outline: none;
+  border: none;
+  border-radius: 57px;
+  box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+  color: #758681;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.contact-form button {
+  position: relative;
+  top: -63px;
+  left: 440px;
+  background-color: #fb4c47;
+  padding: 13px 55px;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+}
+.contact-form button:hover {
+  color: #fff;
+}
+footer .social-media a {
+  margin-right: 25px;
+  color: #035755;
+  cursor: pointer;
+}
+footer .social-media a .fa-youtube {
+  color: #fb4e49;
+}
+.footer-text p {
+  font-weight: 500;
+  color: #4e5253;
+}

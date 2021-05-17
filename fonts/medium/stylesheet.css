@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gelion';
+    src: url('fonts/medium/Gelion-Medium.eot');
+    src: url('fonts/medium/Gelion-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/medium/Gelion-Medium.woff2') format('woff2'),
+        url('fonts/medium/Gelion-Medium.woff') format('woff'),
+        url('fonts/medium/Gelion-Medium.ttf') format('truetype'),
+        url('fonts/medium/Gelion-Medium.svg#Gelion-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

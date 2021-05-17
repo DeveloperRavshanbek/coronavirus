@@ -1,0 +1,215 @@
+@media (max-width: 991px) {
+  header {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  .header-wrapper {
+    position: relative;
+  }
+  header .header-wrapper nav {
+    position: fixed;
+    transform: translateX(-100%);
+    left: 0;
+    top: 0;
+    background-color: #11749e;
+    width: 280px;
+    height: 100vh;
+    padding: 22px;
+    z-index: 1;
+    transition: transform 0.2s linear;
+   }
+  header .header-wrapper nav ul{
+        display: block;
+    }
+    
+    header nav.active ul{
+        top: 0 !important;
+    }
+  header .header-wrapper nav.active {
+    transform: translateX(0)
+  }
+  header .header-wrapper nav .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #e6e6e6;
+    font-size: 35px;
+  }
+  header .header-wrapper nav ul li {
+    color: #fff;
+    padding-bottom: 20px;
+    border: none;
+  }
+    header .header-wrapper nav.active ul li{
+    padding-bottom: 20px;
+    }
+  header .header-wrapper nav ul li a {
+    color: #fff8f8;
+    border: none;
+    border-radius: 0;
+  }
+  .header-wrapper nav ul li a:hover {
+    border: none;
+    color: #fff8f8;
+  }
+  .toggle {
+    display: block !important;
+    font-size: 30px;
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .footer-wrapper .social-media {
+    display: flex;
+    font-size: 13px;
+  }
+  .respon {
+    display: none;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .main-banner {
+    background-image: none;
+    padding-top: 20%;
+  }
+  .main-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-corona {
+    padding-bottom: 0;
+  }
+  .about-pic img {
+    width: 260px;
+    height: 260px;
+  }
+  .about-pic {
+    padding-bottom: 60px;
+  }
+  .about-info {
+    padding-bottom: 60px;
+  }
+  .about-info span {
+    margin-bottom: 5px;
+  }
+  .about-info p {
+    line-height: 25px;
+  }
+  .contact-item h1 {
+    font-size: 30px;
+  }
+  .contact-item span {
+    font-size: 35px;
+  }
+  .contact-form input {
+    margin-left: -70px;
+  }
+  .contact-form button {
+    top: -65px;
+    left: 250px;
+  }
+  .contagion-card {
+    padding: 30px 20px;
+  }
+  .contagion-card img {
+    margin-bottom: 5px;
+  }
+  .contagion-card img {
+    margin-top: 0;
+  }
+  .contagion-card span {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .covid-img img {
+    margin-top: 0;
+  }
+  .about-info {
+    margin-top: 0;
+  }
+
+  .respon {
+    display: none;
+  }
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-wrapper .social-media {
+    display: flex;
+    font-size: 15px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+  }
+  footer .header-wrapper {
+    flex-direction: column;
+  }
+  footer .header-logo img {
+    margin-bottom: 20px;
+  }
+  footer .header-wrapper nav ul {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  header {
+    width: 100%;
+  }
+  .main-banner {
+    background-image: none;
+    padding-top: 20%;
+  }
+  .main-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contagion-card {
+    padding: 30px 30px;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    text-align: center;
+    transition: border-bottom 0.1s linear;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 50px;
+  }
+  .covid-img {
+    display: none;
+  }
+  .respon {
+    display: none;
+  }
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer-wrapper .social-media {
+    display: flex;
+    font-size: 15px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+  }
+  footer .header-wrapper {
+    flex-direction: column;
+  }
+  footer .header-logo img {
+    margin-bottom: 20px;
+  }
+  footer .header-wrapper nav ul {
+    margin-bottom: 30px;
+  }
+}

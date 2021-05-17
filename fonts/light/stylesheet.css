@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Gelion';
+    src: url('fonts/light/Gelion-Light.eot');
+    src: url('fonts/light/Gelion-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/light/Gelion-Light.woff2') format('woff2'),
+        url('fonts/light/Gelion-Light.woff') format('woff'),
+        url('fonts/light/Gelion-Light.ttf') format('truetype'),
+        url('fonts/light/Gelion-Light.svg#Gelion-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
